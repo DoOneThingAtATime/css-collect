@@ -1,0 +1,13 @@
+{
+  "name": "css-collect",
+  "scripts": {
+    "dev": "npx parcel index.html --no-cache",
+    "build": "npx parcel build --public-url ./ index.html"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
+}
