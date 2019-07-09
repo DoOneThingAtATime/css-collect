@@ -42,11 +42,21 @@
         </Menu>
       </Sider>
       <Content class="site-content">
-        <div class="page-content">content</div>
+        <router-view></router-view>
       </Content>
     </Layout>
   </Layout>
 </template>
+
+<script>
+import router from './router'
+
+export default {
+  created () {
+    console.log(router)
+  }
+}
+</script>
 
 <style lang="less" scoped>
 .site-page {
