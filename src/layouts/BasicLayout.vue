@@ -4,12 +4,13 @@
       <app-header />
     </Header>
     <Layout>
+      <i-content class="site-content">
+        <h2 class="title">Examples</h2>
+        <router-view></router-view>
+      </i-content>
       <Sider class="site-side-menu">
         <app-side-menu />
       </Sider>
-      <Content class="site-content">
-        <router-view></router-view>
-      </Content>
     </Layout>
   </Layout>
 </template>
@@ -29,11 +30,15 @@ export default {
 <style lang="less" scoped>
   .site-page {
     min-height: 100vh;
+    background-color: #f5f7fb;
     .site-side-menu {
       background: white;
     }
+    .title {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
     .site-content {
-      background: #f5f5f5;
       padding: 24px;
       .page-content {
         min-height: 30em;
